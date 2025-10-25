@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* 👇 These three must come first, before anything else */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 👇 Base layer for CSS variables */
+@layer base {
+  :root {
+    --color-primary: #5044E5;
+  }
+
+  * {
+    font-family: "Outfit", sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ============================
+   RESPONSIVE GLOBAL STYLES
+=============================== */
+
+.rich-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #292929;
+  padding: 1rem;
+}
+
+.rich-text p {
+  margin-bottom: 16px;
+}
+
+.rich-text h1 {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 700;
+  color: #252525;
+  margin: 2rem 0 1rem;
+}
+
+.rich-text h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #252525;
+  margin: 1.5rem 0;
+}
+
+.rich-text h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 1.25rem 0;
+}
+
+.rich-text h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  margin: 1rem 0;
+}
+
+.rich-text h5 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #555;
+  margin: 0.75rem 0;
+}
+
+.rich-text h6 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.rich-text strong {
+  font-weight: 700;
+}
+
+.rich-text ol {
+  margin-left: 1.5rem;
+  list-style-type: decimal;
+}
+
+.rich-text ul {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.rich-text li {
+  margin-bottom: 8px;
+}
+
+.rich-text a {
+  color: #007AFF;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+
+.rich-text a:hover {
+  color: var(--color-primary);
+}
+
+/* ============================
+   RESPONSIVE MEDIA QUERIES
+=============================== */
+
+/* Small screens */
+@media (max-width: 640px) {
+  .rich-text {
+    font-size: 14px;
+    padding: 0.75rem;
+  }
+
+  .rich-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .rich-text h2 {
+    font-size: 1.25rem;
+  }
+
+  .rich-text img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .rich-text {
+    font-size: 15px;
+    padding: 1rem 2rem;
+  }
+
+  .rich-text h1 {
+    font-size: 2rem;
+  }
+
+  .rich-text h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .rich-text {
+    max-width: 750px;
+    margin: auto;
+    font-size: 16px;
+  }
+}
