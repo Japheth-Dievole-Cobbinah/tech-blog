@@ -31,8 +31,8 @@ const Header = () => {
 
         {/* Main Heading */}
         <h1 className="text-3xl sm:text-6xl font-semibold sm:leading-[1.15] text-gray-800">
-          Your place to create, <span className="text-primary">share, and</span>
-          <br className="hidden sm:block" /> connect.
+          Your own <span className="text-primary">blogging</span>
+          <br className="hidden sm:block" /> platform.
         </h1>
 
         {/* Subtext */}

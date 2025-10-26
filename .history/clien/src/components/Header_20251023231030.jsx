@@ -31,13 +31,14 @@ const Header = () => {
 
         {/* Main Heading */}
         <h1 className="text-3xl sm:text-6xl font-semibold sm:leading-[1.15] text-gray-800">
-          Your place to create, <span className="text-primary">share, and</span>
-          <br className="hidden sm:block" /> connect.
+          Your own <span className="text-primary">blogging</span>
+          <br className="hidden sm:block" /> platform.
         </h1>
 
         {/* Subtext */}
         <p className="my-6 sm:my-8 max-w-2xl mx-auto text-gray-500 text-sm sm:text-base">
-          Exploring the pulse of technology, cybersecurity, and modern living.
+          This is your space to think out loud, share what matters, and write without filters.
+          Whether it’s one word or a thousand, your voice finds a home here.
         </p>
 
         {/* Search Form */}

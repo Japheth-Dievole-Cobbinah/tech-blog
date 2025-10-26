@@ -7,16 +7,16 @@ const Footer = () => {
       {/* Top Section */}
       <div className="px-6 md:px-16 lg:px-24 xl:px-32 py-12 border-b border-gray-300/30">
         <div className="flex flex-col md:flex-row items-start justify-between gap-10">
-          
-          {/* Logo + Description Side by Side */}
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 max-w-2xl">
+          {/* Logo and Description */}
+          <div className="max-w-md">
             <img
               src={assets.logo}
               alt="CommIT Connect logo"
-              className="w-32 sm:w-40 md:w-44 flex-shrink-0"
+              className="w-32 sm:w-44 mb-5"
             />
-            <p className="text-sm leading-relaxed text-gray-700 sm:max-w-[400px]">
-              <span className="font-semibold text-gray-900">CommIT Connect</span> is a digital hub where technology, culture, and lifestyle converge — inspiring awareness, creativity, and connection in the modern world.
+            <p className="text-sm leading-relaxed text-gray-700">
+              <span className="font-semibold text-gray-900">CommIT Connect</span> is a digital hub where technology, culture, and lifestyle converge —
+              inspiring awareness, creativity, and connection in the modern world.
             </p>
           </div>
 
@@ -42,7 +42,6 @@ const Footer = () => {
               </div>
             ))}
           </div>
-
         </div>
       </div>
 
